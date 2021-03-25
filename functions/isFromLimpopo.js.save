@@ -1,0 +1,6 @@
+function isFromLimpopo (reg)
+{
+  return reg.endsWith('L');
+}
+
+isFromLimpopo('DRT 122 L');
