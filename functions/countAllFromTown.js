@@ -1,15 +1,13 @@
-function countAllFromTown(string)
-{
-  var split = string.split(",");
-  console.log(split);
-  var count = 0;
-  
-  for (var i=0; i<split.length; i++)
-  {
-    if (split[i].startsWith('CL'))
-    {
-      count++;
+function countAllFromTown(regNums, regStr){
+  var newRegNums = regNums.split(',');
+  var regCount = 0; 
+ 
+  for (var i=0;i<newRegNums.length;i++){
+    var regTrim = newRegNums [i].trim()
+    if(regTrim.startsWith(regStr)){
+      //console.log(regTrim)
+      regCount++  ; 
     }
   }
-  return count;
-}
+  return regCount;
+  }

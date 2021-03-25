@@ -4,7 +4,10 @@ function regCheck(regNo,regEnd)
 }
 
 var isGP = regCheck('DV 23 NB GP', 'GP');
-console.log(isGP);
+//console.log(isGP);
 
 var isMP = regCheck('DV 23 LP GP', 'MP');
-console.log(isMP);
+//console.log(isMP);
+var isL = regCheck('DV 23 LP L', 'L');
+
+var isEC = regCheck('abx EC', 'EC');
