@@ -1,11 +1,27 @@
 describe('isWeekday' , function(){
-    it('should check whether day entered is a weekday' , function(){
-        assert.equal(isWeekday('Monday'),true) );
-        assert.equal(isWeekday('Tuesday'), true) );
-        assert.equal(isWeekday('Wednesday'), true );
-        assert.equal(isWeekday('Saturday'), false );
-        assert.equal(isWeekday('Sunday'), false );
+    it('should check whether Tuesday  is a weekday' , function(){
+       
+        assert.equal(isWeekday('Tuesday'), true);
+       
+        
+    });
 
+
+
+
+    it('should check whether Monday is a weekday' , function(){
+        assert.equal(isWeekday('Monday'),true);
+        
+
+        
+    });
+
+
+
+    it('should check Saturday is a weekday' , function(){
+      
+        assert.equal(isWeekday('Saturday'), false );
+       
         
     });
 
